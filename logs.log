@@ -1,0 +1,1851 @@
+2023-10-15 01:38:24,364:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-15 01:38:24,364:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-15 01:38:24,365:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-15 01:38:24,365:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-10-15 01:38:34,339:INFO:PyCaret ClassificationExperiment
+2023-10-15 01:38:34,339:INFO:Logging name: clf-default-name
+2023-10-15 01:38:34,340:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-10-15 01:38:34,340:INFO:version 3.1.0
+2023-10-15 01:38:34,341:INFO:Initializing setup()
+2023-10-15 01:38:34,341:INFO:self.USI: d1ba
+2023-10-15 01:38:34,341:INFO:self._variable_keys: {'n_jobs_param', 'memory', 'is_multiclass', 'exp_id', 'target_param', '_available_plots', 'X', 'fold_shuffle_param', 'fix_imbalance', 'fold_generator', 'idx', 'data', 'y', 'html_param', 'X_train', 'log_plots_param', 'logging_param', 'seed', 'gpu_n_jobs_param', 'fold_groups_param', 'X_test', 'gpu_param', 'y_train', '_ml_usecase', 'y_test', 'exp_name_log', 'USI', 'pipeline'}
+2023-10-15 01:38:34,341:INFO:Checking environment
+2023-10-15 01:38:34,342:INFO:python_version: 3.9.7
+2023-10-15 01:38:34,342:INFO:python_build: ('default', 'Sep 16 2021 16:59:28')
+2023-10-15 01:38:34,342:INFO:machine: AMD64
+2023-10-15 01:38:34,342:INFO:platform: Windows-10-10.0.23516-SP0
+2023-10-15 01:38:34,350:INFO:Memory: svmem(total=6311731200, available=564125696, percent=91.1, used=5747605504, free=564125696)
+2023-10-15 01:38:34,350:INFO:Physical Core: 4
+2023-10-15 01:38:34,350:INFO:Logical Core: 8
+2023-10-15 01:38:34,350:INFO:Checking libraries
+2023-10-15 01:38:34,350:INFO:System:
+2023-10-15 01:38:34,351:INFO:    python: 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]
+2023-10-15 01:38:34,351:INFO:executable: c:\Users\USER\anaconda3\python.exe
+2023-10-15 01:38:34,351:INFO:   machine: Windows-10-10.0.23516-SP0
+2023-10-15 01:38:34,351:INFO:PyCaret required dependencies:
+2023-10-15 01:38:36,142:INFO:                 pip: 23.0
+2023-10-15 01:38:36,142:INFO:          setuptools: 58.0.4
+2023-10-15 01:38:36,142:INFO:             pycaret: 3.1.0
+2023-10-15 01:38:36,142:INFO:             IPython: 7.29.0
+2023-10-15 01:38:36,142:INFO:          ipywidgets: 7.6.5
+2023-10-15 01:38:36,143:INFO:                tqdm: 4.62.3
+2023-10-15 01:38:36,143:INFO:               numpy: 1.22.3
+2023-10-15 01:38:36,143:INFO:              pandas: 1.3.4
+2023-10-15 01:38:36,143:INFO:              jinja2: 2.11.3
+2023-10-15 01:38:36,143:INFO:               scipy: 1.7.3
+2023-10-15 01:38:36,143:INFO:              joblib: 1.3.2
+2023-10-15 01:38:36,143:INFO:             sklearn: 1.2.2
+2023-10-15 01:38:36,143:INFO:                pyod: 1.1.0
+2023-10-15 01:38:36,143:INFO:            imblearn: 0.11.0
+2023-10-15 01:38:36,143:INFO:   category_encoders: 2.6.2
+2023-10-15 01:38:36,144:INFO:            lightgbm: 4.1.0
+2023-10-15 01:38:36,144:INFO:               numba: 0.55.2
+2023-10-15 01:38:36,144:INFO:            requests: 2.31.0
+2023-10-15 01:38:36,144:INFO:          matplotlib: 3.4.3
+2023-10-15 01:38:36,144:INFO:          scikitplot: 0.3.7
+2023-10-15 01:38:36,144:INFO:         yellowbrick: 1.5
+2023-10-15 01:38:36,144:INFO:              plotly: 5.8.2
+2023-10-15 01:38:36,144:INFO:    plotly-resampler: Not installed
+2023-10-15 01:38:36,144:INFO:             kaleido: 0.2.1
+2023-10-15 01:38:36,144:INFO:           schemdraw: 0.15
+2023-10-15 01:38:36,145:INFO:         statsmodels: 0.14.0
+2023-10-15 01:38:36,145:INFO:              sktime: 0.21.1
+2023-10-15 01:38:36,145:INFO:               tbats: 1.1.3
+2023-10-15 01:38:36,145:INFO:            pmdarima: 2.0.3
+2023-10-15 01:38:36,145:INFO:              psutil: 5.9.5
+2023-10-15 01:38:36,145:INFO:          markupsafe: 2.1.3
+2023-10-15 01:38:36,145:INFO:             pickle5: Not installed
+2023-10-15 01:38:36,145:INFO:         cloudpickle: 2.0.0
+2023-10-15 01:38:36,146:INFO:         deprecation: 2.1.0
+2023-10-15 01:38:36,146:INFO:              xxhash: 3.4.1
+2023-10-15 01:38:36,146:INFO:           wurlitzer: Not installed
+2023-10-15 01:38:36,146:INFO:PyCaret optional dependencies:
+2023-10-15 01:38:36,192:INFO:                shap: 0.41.0
+2023-10-15 01:38:36,193:INFO:           interpret: Not installed
+2023-10-15 01:38:36,193:INFO:                umap: Not installed
+2023-10-15 01:38:36,193:INFO:     ydata_profiling: Not installed
+2023-10-15 01:38:36,193:INFO:  explainerdashboard: Not installed
+2023-10-15 01:38:36,193:INFO:             autoviz: Not installed
+2023-10-15 01:38:36,193:INFO:           fairlearn: Not installed
+2023-10-15 01:38:36,193:INFO:          deepchecks: Not installed
+2023-10-15 01:38:36,193:INFO:             xgboost: Not installed
+2023-10-15 01:38:36,193:INFO:            catboost: Not installed
+2023-10-15 01:38:36,193:INFO:              kmodes: Not installed
+2023-10-15 01:38:36,194:INFO:             mlxtend: Not installed
+2023-10-15 01:38:36,194:INFO:       statsforecast: Not installed
+2023-10-15 01:38:36,194:INFO:        tune_sklearn: Not installed
+2023-10-15 01:38:36,194:INFO:                 ray: Not installed
+2023-10-15 01:38:36,194:INFO:            hyperopt: Not installed
+2023-10-15 01:38:36,195:INFO:              optuna: Not installed
+2023-10-15 01:38:36,195:INFO:               skopt: Not installed
+2023-10-15 01:38:36,195:INFO:              mlflow: Not installed
+2023-10-15 01:38:36,195:INFO:              gradio: Not installed
+2023-10-15 01:38:36,196:INFO:             fastapi: Not installed
+2023-10-15 01:38:36,196:INFO:             uvicorn: Not installed
+2023-10-15 01:38:36,196:INFO:              m2cgen: Not installed
+2023-10-15 01:38:36,196:INFO:           evidently: Not installed
+2023-10-15 01:38:36,196:INFO:               fugue: Not installed
+2023-10-15 01:38:36,196:INFO:           streamlit: Not installed
+2023-10-15 01:38:36,196:INFO:             prophet: Not installed
+2023-10-15 01:38:36,196:INFO:None
+2023-10-15 01:38:36,196:INFO:Set up data.
+2023-10-15 01:38:36,407:INFO:Set up folding strategy.
+2023-10-15 01:38:36,407:INFO:Set up train/test split.
+2023-10-15 01:38:36,655:INFO:Set up index.
+2023-10-15 01:38:36,667:INFO:Assigning column types.
+2023-10-15 01:38:36,819:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-10-15 01:38:36,908:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-15 01:38:36,912:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-10-15 01:38:36,985:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:36,986:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,055:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-10-15 01:38:37,056:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-10-15 01:38:37,099:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,099:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,100:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-10-15 01:38:37,170:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-10-15 01:38:37,213:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,213:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,282:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-10-15 01:38:37,324:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,325:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,325:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-10-15 01:38:37,448:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,448:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,563:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,563:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:37,568:INFO:Preparing preprocessing pipeline...
+2023-10-15 01:38:37,589:INFO:Set up simple imputation.
+2023-10-15 01:38:37,608:INFO:Set up column name cleaning.
+2023-10-15 01:38:37,968:INFO:Finished creating preprocessing pipeline.
+2023-10-15 01:38:37,976:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\USER\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['Patron_Salary',
+                                             'Automobile_Possession',
+                                             'Two-Wheeler_Ownership',
+                                             'Ongoing_Borrowing',
+                                             'Residence_Proprietorship',
+                                             'Offspring_Number', 'Loan_Capital',
+                                             'Borrowing_Periodic_Payment',
+                                             'Population_Fraction_by_Region...
+                 TransformerWrapper(exclude=None, include=[],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_empty_features=False,
+                                                              missing_values=nan,
+                                                              strategy='most_frequent',
+                                                              verbose='deprecated'))),
+                ('clean_column_names',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=CleanColumnNames(match='[\\]\\[\\,\\{\\}\\"\\:]+')))],
+         verbose=False)
+2023-10-15 01:38:37,976:INFO:Creating final display dataframe.
+2023-10-15 01:38:39,074:INFO:Setup _display_container:                     Description             Value
+0                    Session id                42
+1                        Target           Default
+2                   Target type            Binary
+3           Original data shape      (121856, 73)
+4        Transformed data shape      (121856, 73)
+5   Transformed train set shape       (85299, 73)
+6    Transformed test set shape       (36557, 73)
+7              Numeric features                72
+8                    Preprocess              True
+9               Imputation type            simple
+10           Numeric imputation              mean
+11       Categorical imputation              mode
+12               Fold Generator   StratifiedKFold
+13                  Fold Number                10
+14                     CPU Jobs                -1
+15                      Use GPU             False
+16               Log Experiment             False
+17              Experiment Name  clf-default-name
+18                          USI              d1ba
+2023-10-15 01:38:39,238:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:39,239:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:39,359:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:39,359:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-10-15 01:38:39,362:INFO:setup() successfully completed in 5.03s...............
+2023-10-15 01:38:39,362:INFO:Initializing compare_models()
+2023-10-15 01:38:39,362:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-10-15 01:38:39,362:INFO:Checking exceptions
+2023-10-15 01:38:39,463:INFO:Preparing display monitor
+2023-10-15 01:38:39,524:INFO:Initializing Logistic Regression
+2023-10-15 01:38:39,524:INFO:Total runtime is 1.6617774963378907e-05 minutes
+2023-10-15 01:38:39,533:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:38:39,533:INFO:Initializing create_model()
+2023-10-15 01:38:39,534:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:38:39,535:INFO:Checking exceptions
+2023-10-15 01:38:39,535:INFO:Importing libraries
+2023-10-15 01:38:39,536:INFO:Copying training dataset
+2023-10-15 01:38:39,758:INFO:Defining folds
+2023-10-15 01:38:39,758:INFO:Declaring metric variables
+2023-10-15 01:38:39,768:INFO:Importing untrained model
+2023-10-15 01:38:39,776:INFO:Logistic Regression Imported successfully
+2023-10-15 01:38:39,790:INFO:Starting cross validation
+2023-10-15 01:38:39,792:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:38:47,183:WARNING:create_model() for lr raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:38:47,191:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:38:47,191:INFO:Initializing create_model()
+2023-10-15 01:38:47,191:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:38:47,191:INFO:Checking exceptions
+2023-10-15 01:38:47,191:INFO:Importing libraries
+2023-10-15 01:38:47,191:INFO:Copying training dataset
+2023-10-15 01:38:47,387:INFO:Defining folds
+2023-10-15 01:38:47,387:INFO:Declaring metric variables
+2023-10-15 01:38:47,391:INFO:Importing untrained model
+2023-10-15 01:38:47,404:INFO:Logistic Regression Imported successfully
+2023-10-15 01:38:47,421:INFO:Starting cross validation
+2023-10-15 01:38:47,423:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:38:53,496:ERROR:create_model() for lr raised an exception or returned all 0.0:
+2023-10-15 01:38:53,498:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:38:53,498:INFO:Initializing K Neighbors Classifier
+2023-10-15 01:38:53,498:INFO:Total runtime is 0.2329111059506734 minutes
+2023-10-15 01:38:53,507:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:38:53,509:INFO:Initializing create_model()
+2023-10-15 01:38:53,510:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:38:53,510:INFO:Checking exceptions
+2023-10-15 01:38:53,511:INFO:Importing libraries
+2023-10-15 01:38:53,511:INFO:Copying training dataset
+2023-10-15 01:38:53,756:INFO:Defining folds
+2023-10-15 01:38:53,757:INFO:Declaring metric variables
+2023-10-15 01:38:53,770:INFO:Importing untrained model
+2023-10-15 01:38:53,783:INFO:K Neighbors Classifier Imported successfully
+2023-10-15 01:38:53,802:INFO:Starting cross validation
+2023-10-15 01:38:53,805:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:38:59,344:WARNING:create_model() for knn raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:38:59,345:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:38:59,345:INFO:Initializing create_model()
+2023-10-15 01:38:59,346:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:38:59,346:INFO:Checking exceptions
+2023-10-15 01:38:59,346:INFO:Importing libraries
+2023-10-15 01:38:59,346:INFO:Copying training dataset
+2023-10-15 01:38:59,505:INFO:Defining folds
+2023-10-15 01:38:59,505:INFO:Declaring metric variables
+2023-10-15 01:38:59,514:INFO:Importing untrained model
+2023-10-15 01:38:59,521:INFO:K Neighbors Classifier Imported successfully
+2023-10-15 01:38:59,534:INFO:Starting cross validation
+2023-10-15 01:38:59,536:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:04,601:ERROR:create_model() for knn raised an exception or returned all 0.0:
+2023-10-15 01:39:04,602:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:04,602:INFO:Initializing Naive Bayes
+2023-10-15 01:39:04,602:INFO:Total runtime is 0.4179837147394816 minutes
+2023-10-15 01:39:04,606:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:39:04,607:INFO:Initializing create_model()
+2023-10-15 01:39:04,607:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:04,607:INFO:Checking exceptions
+2023-10-15 01:39:04,608:INFO:Importing libraries
+2023-10-15 01:39:04,608:INFO:Copying training dataset
+2023-10-15 01:39:04,760:INFO:Defining folds
+2023-10-15 01:39:04,761:INFO:Declaring metric variables
+2023-10-15 01:39:04,767:INFO:Importing untrained model
+2023-10-15 01:39:04,774:INFO:Naive Bayes Imported successfully
+2023-10-15 01:39:04,786:INFO:Starting cross validation
+2023-10-15 01:39:04,789:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:10,321:WARNING:create_model() for nb raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:39:10,322:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:10,322:INFO:Initializing create_model()
+2023-10-15 01:39:10,322:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:10,322:INFO:Checking exceptions
+2023-10-15 01:39:10,322:INFO:Importing libraries
+2023-10-15 01:39:10,322:INFO:Copying training dataset
+2023-10-15 01:39:10,509:INFO:Defining folds
+2023-10-15 01:39:10,509:INFO:Declaring metric variables
+2023-10-15 01:39:10,517:INFO:Importing untrained model
+2023-10-15 01:39:10,523:INFO:Naive Bayes Imported successfully
+2023-10-15 01:39:10,536:INFO:Starting cross validation
+2023-10-15 01:39:10,538:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:15,773:ERROR:create_model() for nb raised an exception or returned all 0.0:
+2023-10-15 01:39:15,774:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:15,775:INFO:Initializing Decision Tree Classifier
+2023-10-15 01:39:15,775:INFO:Total runtime is 0.6041882236798604 minutes
+2023-10-15 01:39:15,782:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:39:15,783:INFO:Initializing create_model()
+2023-10-15 01:39:15,783:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:15,783:INFO:Checking exceptions
+2023-10-15 01:39:15,784:INFO:Importing libraries
+2023-10-15 01:39:15,784:INFO:Copying training dataset
+2023-10-15 01:39:15,986:INFO:Defining folds
+2023-10-15 01:39:15,986:INFO:Declaring metric variables
+2023-10-15 01:39:15,994:INFO:Importing untrained model
+2023-10-15 01:39:16,002:INFO:Decision Tree Classifier Imported successfully
+2023-10-15 01:39:16,019:INFO:Starting cross validation
+2023-10-15 01:39:16,021:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:21,156:WARNING:create_model() for dt raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:39:21,157:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:21,157:INFO:Initializing create_model()
+2023-10-15 01:39:21,157:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:21,157:INFO:Checking exceptions
+2023-10-15 01:39:21,157:INFO:Importing libraries
+2023-10-15 01:39:21,157:INFO:Copying training dataset
+2023-10-15 01:39:21,317:INFO:Defining folds
+2023-10-15 01:39:21,317:INFO:Declaring metric variables
+2023-10-15 01:39:21,325:INFO:Importing untrained model
+2023-10-15 01:39:21,333:INFO:Decision Tree Classifier Imported successfully
+2023-10-15 01:39:21,346:INFO:Starting cross validation
+2023-10-15 01:39:21,349:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:26,470:ERROR:create_model() for dt raised an exception or returned all 0.0:
+2023-10-15 01:39:26,471:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:26,471:INFO:Initializing SVM - Linear Kernel
+2023-10-15 01:39:26,471:INFO:Total runtime is 0.7824659864107767 minutes
+2023-10-15 01:39:26,477:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:39:26,477:INFO:Initializing create_model()
+2023-10-15 01:39:26,478:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:26,478:INFO:Checking exceptions
+2023-10-15 01:39:26,478:INFO:Importing libraries
+2023-10-15 01:39:26,478:INFO:Copying training dataset
+2023-10-15 01:39:26,637:INFO:Defining folds
+2023-10-15 01:39:26,637:INFO:Declaring metric variables
+2023-10-15 01:39:26,647:INFO:Importing untrained model
+2023-10-15 01:39:26,652:INFO:SVM - Linear Kernel Imported successfully
+2023-10-15 01:39:26,663:INFO:Starting cross validation
+2023-10-15 01:39:26,665:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:31,784:WARNING:create_model() for svm raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:39:31,784:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:31,785:INFO:Initializing create_model()
+2023-10-15 01:39:31,785:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:31,785:INFO:Checking exceptions
+2023-10-15 01:39:31,785:INFO:Importing libraries
+2023-10-15 01:39:31,785:INFO:Copying training dataset
+2023-10-15 01:39:31,936:INFO:Defining folds
+2023-10-15 01:39:31,937:INFO:Declaring metric variables
+2023-10-15 01:39:31,945:INFO:Importing untrained model
+2023-10-15 01:39:31,952:INFO:SVM - Linear Kernel Imported successfully
+2023-10-15 01:39:31,966:INFO:Starting cross validation
+2023-10-15 01:39:31,969:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:36,873:ERROR:create_model() for svm raised an exception or returned all 0.0:
+2023-10-15 01:39:36,874:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:36,874:INFO:Initializing Ridge Classifier
+2023-10-15 01:39:36,874:INFO:Total runtime is 0.9558450897534687 minutes
+2023-10-15 01:39:36,879:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:39:36,879:INFO:Initializing create_model()
+2023-10-15 01:39:36,879:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:36,880:INFO:Checking exceptions
+2023-10-15 01:39:36,880:INFO:Importing libraries
+2023-10-15 01:39:36,880:INFO:Copying training dataset
+2023-10-15 01:39:37,034:INFO:Defining folds
+2023-10-15 01:39:37,034:INFO:Declaring metric variables
+2023-10-15 01:39:37,040:INFO:Importing untrained model
+2023-10-15 01:39:37,048:INFO:Ridge Classifier Imported successfully
+2023-10-15 01:39:37,060:INFO:Starting cross validation
+2023-10-15 01:39:37,063:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:42,111:WARNING:create_model() for ridge raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:39:42,112:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:42,215:INFO:Initializing create_model()
+2023-10-15 01:39:42,215:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:42,215:INFO:Checking exceptions
+2023-10-15 01:39:42,216:INFO:Importing libraries
+2023-10-15 01:39:42,216:INFO:Copying training dataset
+2023-10-15 01:39:42,385:INFO:Defining folds
+2023-10-15 01:39:42,385:INFO:Declaring metric variables
+2023-10-15 01:39:42,392:INFO:Importing untrained model
+2023-10-15 01:39:42,399:INFO:Ridge Classifier Imported successfully
+2023-10-15 01:39:42,412:INFO:Starting cross validation
+2023-10-15 01:39:42,415:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:47,429:ERROR:create_model() for ridge raised an exception or returned all 0.0:
+2023-10-15 01:39:47,431:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:47,431:INFO:Initializing Random Forest Classifier
+2023-10-15 01:39:47,431:INFO:Total runtime is 1.1317917744318642 minutes
+2023-10-15 01:39:47,437:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:39:47,437:INFO:Initializing create_model()
+2023-10-15 01:39:47,438:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:47,438:INFO:Checking exceptions
+2023-10-15 01:39:47,438:INFO:Importing libraries
+2023-10-15 01:39:47,438:INFO:Copying training dataset
+2023-10-15 01:39:47,623:INFO:Defining folds
+2023-10-15 01:39:47,623:INFO:Declaring metric variables
+2023-10-15 01:39:47,630:INFO:Importing untrained model
+2023-10-15 01:39:47,638:INFO:Random Forest Classifier Imported successfully
+2023-10-15 01:39:47,650:INFO:Starting cross validation
+2023-10-15 01:39:47,653:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:52,620:WARNING:create_model() for rf raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:39:52,621:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:52,621:INFO:Initializing create_model()
+2023-10-15 01:39:52,621:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:52,621:INFO:Checking exceptions
+2023-10-15 01:39:52,621:INFO:Importing libraries
+2023-10-15 01:39:52,621:INFO:Copying training dataset
+2023-10-15 01:39:52,790:INFO:Defining folds
+2023-10-15 01:39:52,790:INFO:Declaring metric variables
+2023-10-15 01:39:52,797:INFO:Importing untrained model
+2023-10-15 01:39:52,805:INFO:Random Forest Classifier Imported successfully
+2023-10-15 01:39:52,816:INFO:Starting cross validation
+2023-10-15 01:39:52,819:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:39:57,766:ERROR:create_model() for rf raised an exception or returned all 0.0:
+2023-10-15 01:39:57,767:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:39:57,767:INFO:Initializing Quadratic Discriminant Analysis
+2023-10-15 01:39:57,767:INFO:Total runtime is 1.3040587623914082 minutes
+2023-10-15 01:39:57,772:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:39:57,772:INFO:Initializing create_model()
+2023-10-15 01:39:57,772:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:39:57,773:INFO:Checking exceptions
+2023-10-15 01:39:57,773:INFO:Importing libraries
+2023-10-15 01:39:57,773:INFO:Copying training dataset
+2023-10-15 01:39:57,946:INFO:Defining folds
+2023-10-15 01:39:57,946:INFO:Declaring metric variables
+2023-10-15 01:39:57,955:INFO:Importing untrained model
+2023-10-15 01:39:57,962:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-10-15 01:39:57,976:INFO:Starting cross validation
+2023-10-15 01:39:57,978:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:03,891:WARNING:create_model() for qda raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:40:03,892:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:03,893:INFO:Initializing create_model()
+2023-10-15 01:40:03,893:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:03,893:INFO:Checking exceptions
+2023-10-15 01:40:03,893:INFO:Importing libraries
+2023-10-15 01:40:03,893:INFO:Copying training dataset
+2023-10-15 01:40:04,073:INFO:Defining folds
+2023-10-15 01:40:04,073:INFO:Declaring metric variables
+2023-10-15 01:40:04,083:INFO:Importing untrained model
+2023-10-15 01:40:04,090:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-10-15 01:40:04,103:INFO:Starting cross validation
+2023-10-15 01:40:04,105:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:09,221:ERROR:create_model() for qda raised an exception or returned all 0.0:
+2023-10-15 01:40:09,222:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:09,222:INFO:Initializing Ada Boost Classifier
+2023-10-15 01:40:09,222:INFO:Total runtime is 1.4949850916862486 minutes
+2023-10-15 01:40:09,227:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:40:09,227:INFO:Initializing create_model()
+2023-10-15 01:40:09,227:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:09,228:INFO:Checking exceptions
+2023-10-15 01:40:09,228:INFO:Importing libraries
+2023-10-15 01:40:09,228:INFO:Copying training dataset
+2023-10-15 01:40:09,405:INFO:Defining folds
+2023-10-15 01:40:09,406:INFO:Declaring metric variables
+2023-10-15 01:40:09,412:INFO:Importing untrained model
+2023-10-15 01:40:09,421:INFO:Ada Boost Classifier Imported successfully
+2023-10-15 01:40:09,431:INFO:Starting cross validation
+2023-10-15 01:40:09,434:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:14,537:WARNING:create_model() for ada raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:40:14,538:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:14,539:INFO:Initializing create_model()
+2023-10-15 01:40:14,539:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:14,539:INFO:Checking exceptions
+2023-10-15 01:40:14,539:INFO:Importing libraries
+2023-10-15 01:40:14,539:INFO:Copying training dataset
+2023-10-15 01:40:14,687:INFO:Defining folds
+2023-10-15 01:40:14,688:INFO:Declaring metric variables
+2023-10-15 01:40:14,695:INFO:Importing untrained model
+2023-10-15 01:40:14,702:INFO:Ada Boost Classifier Imported successfully
+2023-10-15 01:40:14,715:INFO:Starting cross validation
+2023-10-15 01:40:14,718:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:19,683:ERROR:create_model() for ada raised an exception or returned all 0.0:
+2023-10-15 01:40:19,685:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:19,685:INFO:Initializing Gradient Boosting Classifier
+2023-10-15 01:40:19,685:INFO:Total runtime is 1.6693678061167398 minutes
+2023-10-15 01:40:19,690:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:40:19,690:INFO:Initializing create_model()
+2023-10-15 01:40:19,690:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:19,690:INFO:Checking exceptions
+2023-10-15 01:40:19,691:INFO:Importing libraries
+2023-10-15 01:40:19,691:INFO:Copying training dataset
+2023-10-15 01:40:19,880:INFO:Defining folds
+2023-10-15 01:40:19,880:INFO:Declaring metric variables
+2023-10-15 01:40:19,886:INFO:Importing untrained model
+2023-10-15 01:40:19,895:INFO:Gradient Boosting Classifier Imported successfully
+2023-10-15 01:40:19,911:INFO:Starting cross validation
+2023-10-15 01:40:19,913:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:25,360:WARNING:create_model() for gbc raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:40:25,361:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:25,361:INFO:Initializing create_model()
+2023-10-15 01:40:25,362:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:25,362:INFO:Checking exceptions
+2023-10-15 01:40:25,362:INFO:Importing libraries
+2023-10-15 01:40:25,362:INFO:Copying training dataset
+2023-10-15 01:40:25,540:INFO:Defining folds
+2023-10-15 01:40:25,541:INFO:Declaring metric variables
+2023-10-15 01:40:25,550:INFO:Importing untrained model
+2023-10-15 01:40:25,560:INFO:Gradient Boosting Classifier Imported successfully
+2023-10-15 01:40:25,573:INFO:Starting cross validation
+2023-10-15 01:40:25,575:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:31,633:ERROR:create_model() for gbc raised an exception or returned all 0.0:
+2023-10-15 01:40:31,634:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:31,635:INFO:Initializing Linear Discriminant Analysis
+2023-10-15 01:40:31,635:INFO:Total runtime is 1.8685226837793985 minutes
+2023-10-15 01:40:31,643:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:40:31,644:INFO:Initializing create_model()
+2023-10-15 01:40:31,644:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:31,644:INFO:Checking exceptions
+2023-10-15 01:40:31,645:INFO:Importing libraries
+2023-10-15 01:40:31,645:INFO:Copying training dataset
+2023-10-15 01:40:31,905:INFO:Defining folds
+2023-10-15 01:40:31,905:INFO:Declaring metric variables
+2023-10-15 01:40:31,916:INFO:Importing untrained model
+2023-10-15 01:40:31,924:INFO:Linear Discriminant Analysis Imported successfully
+2023-10-15 01:40:31,942:INFO:Starting cross validation
+2023-10-15 01:40:31,944:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:37,137:WARNING:create_model() for lda raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:40:37,138:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:37,138:INFO:Initializing create_model()
+2023-10-15 01:40:37,138:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:37,138:INFO:Checking exceptions
+2023-10-15 01:40:37,138:INFO:Importing libraries
+2023-10-15 01:40:37,138:INFO:Copying training dataset
+2023-10-15 01:40:37,288:INFO:Defining folds
+2023-10-15 01:40:37,289:INFO:Declaring metric variables
+2023-10-15 01:40:37,299:INFO:Importing untrained model
+2023-10-15 01:40:37,307:INFO:Linear Discriminant Analysis Imported successfully
+2023-10-15 01:40:37,321:INFO:Starting cross validation
+2023-10-15 01:40:37,324:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:42,404:ERROR:create_model() for lda raised an exception or returned all 0.0:
+2023-10-15 01:40:42,405:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:42,405:INFO:Initializing Extra Trees Classifier
+2023-10-15 01:40:42,405:INFO:Total runtime is 2.0480267842610678 minutes
+2023-10-15 01:40:42,409:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:40:42,410:INFO:Initializing create_model()
+2023-10-15 01:40:42,410:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:42,410:INFO:Checking exceptions
+2023-10-15 01:40:42,411:INFO:Importing libraries
+2023-10-15 01:40:42,411:INFO:Copying training dataset
+2023-10-15 01:40:42,569:INFO:Defining folds
+2023-10-15 01:40:42,569:INFO:Declaring metric variables
+2023-10-15 01:40:42,576:INFO:Importing untrained model
+2023-10-15 01:40:42,584:INFO:Extra Trees Classifier Imported successfully
+2023-10-15 01:40:42,595:INFO:Starting cross validation
+2023-10-15 01:40:42,598:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:47,722:WARNING:create_model() for et raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:40:47,722:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:47,723:INFO:Initializing create_model()
+2023-10-15 01:40:47,723:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:47,723:INFO:Checking exceptions
+2023-10-15 01:40:47,723:INFO:Importing libraries
+2023-10-15 01:40:47,723:INFO:Copying training dataset
+2023-10-15 01:40:47,889:INFO:Defining folds
+2023-10-15 01:40:47,890:INFO:Declaring metric variables
+2023-10-15 01:40:47,898:INFO:Importing untrained model
+2023-10-15 01:40:47,905:INFO:Extra Trees Classifier Imported successfully
+2023-10-15 01:40:47,918:INFO:Starting cross validation
+2023-10-15 01:40:47,920:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:52,913:ERROR:create_model() for et raised an exception or returned all 0.0:
+2023-10-15 01:40:52,914:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:52,914:INFO:Initializing Light Gradient Boosting Machine
+2023-10-15 01:40:52,914:INFO:Total runtime is 2.2231741706530253 minutes
+2023-10-15 01:40:52,919:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:40:52,919:INFO:Initializing create_model()
+2023-10-15 01:40:52,919:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:52,919:INFO:Checking exceptions
+2023-10-15 01:40:52,920:INFO:Importing libraries
+2023-10-15 01:40:52,920:INFO:Copying training dataset
+2023-10-15 01:40:53,082:INFO:Defining folds
+2023-10-15 01:40:53,082:INFO:Declaring metric variables
+2023-10-15 01:40:53,089:INFO:Importing untrained model
+2023-10-15 01:40:53,097:INFO:Light Gradient Boosting Machine Imported successfully
+2023-10-15 01:40:53,107:INFO:Starting cross validation
+2023-10-15 01:40:53,109:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:40:58,177:WARNING:create_model() for lightgbm raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:40:58,178:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:40:58,277:INFO:Initializing create_model()
+2023-10-15 01:40:58,277:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:40:58,277:INFO:Checking exceptions
+2023-10-15 01:40:58,277:INFO:Importing libraries
+2023-10-15 01:40:58,277:INFO:Copying training dataset
+2023-10-15 01:40:58,455:INFO:Defining folds
+2023-10-15 01:40:58,455:INFO:Declaring metric variables
+2023-10-15 01:40:58,465:INFO:Importing untrained model
+2023-10-15 01:40:58,471:INFO:Light Gradient Boosting Machine Imported successfully
+2023-10-15 01:40:58,484:INFO:Starting cross validation
+2023-10-15 01:40:58,486:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:41:03,447:ERROR:create_model() for lightgbm raised an exception or returned all 0.0:
+2023-10-15 01:41:03,448:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:41:03,448:INFO:Initializing Dummy Classifier
+2023-10-15 01:41:03,448:INFO:Total runtime is 2.398749287923177 minutes
+2023-10-15 01:41:03,453:INFO:SubProcess create_model() called ==================================
+2023-10-15 01:41:03,453:INFO:Initializing create_model()
+2023-10-15 01:41:03,453:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:41:03,454:INFO:Checking exceptions
+2023-10-15 01:41:03,454:INFO:Importing libraries
+2023-10-15 01:41:03,454:INFO:Copying training dataset
+2023-10-15 01:41:03,609:INFO:Defining folds
+2023-10-15 01:41:03,609:INFO:Declaring metric variables
+2023-10-15 01:41:03,619:INFO:Importing untrained model
+2023-10-15 01:41:03,625:INFO:Dummy Classifier Imported successfully
+2023-10-15 01:41:03,637:INFO:Starting cross validation
+2023-10-15 01:41:03,639:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:41:08,706:WARNING:create_model() for dummy raised an exception or returned all 0.0, trying without fit_kwargs:
+2023-10-15 01:41:08,707:WARNING:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 796, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:41:08,707:INFO:Initializing create_model()
+2023-10-15 01:41:08,707:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x00000150A6F86190>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x00000150B0583700>, model_only=True, return_train_score=False, kwargs={})
+2023-10-15 01:41:08,707:INFO:Checking exceptions
+2023-10-15 01:41:08,707:INFO:Importing libraries
+2023-10-15 01:41:08,707:INFO:Copying training dataset
+2023-10-15 01:41:08,850:INFO:Defining folds
+2023-10-15 01:41:08,850:INFO:Declaring metric variables
+2023-10-15 01:41:08,858:INFO:Importing untrained model
+2023-10-15 01:41:08,867:INFO:Dummy Classifier Imported successfully
+2023-10-15 01:41:08,879:INFO:Starting cross validation
+2023-10-15 01:41:08,882:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-10-15 01:41:13,899:ERROR:create_model() for dummy raised an exception or returned all 0.0:
+2023-10-15 01:41:13,900:ERROR:joblib.externals.loky.process_executor._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\externals\loky\process_executor.py", line 426, in _process_worker
+    call_item = call_queue.get(block=True, timeout=timeout)
+  File "c:\Users\USER\anaconda3\lib\multiprocessing\queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pipeline.py", line 24, in <module>
+    from pycaret.utils.generic import get_all_object_vars_and_properties, variable_return
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\utils\generic.py", line 12, in <module>
+    import pandas.io.formats.style
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\io\formats\style.py", line 49, in <module>
+    jinja2 = import_optional_dependency("jinja2", extra="DataFrame.style requires jinja2.")
+  File "c:\Users\USER\anaconda3\lib\site-packages\pandas\compat\_optional.py", line 118, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'Jinja2'. DataFrame.style requires jinja2. Use pip or conda to install Jinja2.
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 812, in compare_models
+    model, model_fit_time = self._create_model(**create_model_args)
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1527, in _create_model
+    model, model_fit_time, model_results, _ = self._create_model_with_cv(
+  File "c:\Users\USER\anaconda3\lib\site-packages\pycaret\internal\pycaret_experiment\supervised_experiment.py", line 1121, in _create_model_with_cv
+    scores = cross_validate(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\model_selection\_validation.py", line 266, in cross_validate
+    results = parallel(
+  File "c:\Users\USER\anaconda3\lib\site-packages\sklearn\utils\parallel.py", line 63, in __call__
+    return super().__call__(iterable_with_config)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1952, in __call__
+    return output if self.return_generator else list(output)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1595, in _get_outputs
+    yield from self._retrieve()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1699, in _retrieve
+    self._raise_error_fast()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 1734, in _raise_error_fast
+    error_job.get_result(self.timeout)
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 736, in get_result
+    return self._return_or_raise()
+  File "c:\Users\USER\anaconda3\lib\site-packages\joblib\parallel.py", line 754, in _return_or_raise
+    raise self._result
+joblib.externals.loky.process_executor.BrokenProcessPool: A task has failed to un-serialize. Please ensure that the arguments of the function are all picklable.
+
+2023-10-15 01:41:13,929:INFO:_master_model_container: 0
+2023-10-15 01:41:13,931:INFO:_display_container: 2
+2023-10-15 01:41:13,931:INFO:[]
+2023-10-15 01:41:13,932:INFO:compare_models() successfully completed......................................
